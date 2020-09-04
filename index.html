@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prueba Pokedex</title>
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+     <!-- localizacion css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+      <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- csnvas JS Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/jquery.canvasjs.min.js"></script>
+     <!--bootstrap V4.5.2 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-5 text-center">
+          <h1 class="mt-5"> <img src="assets/img/PokemonPik.png" alt="pokemon logo" id="logo-img"></h1>
+          <p class="lead">Atrapa el tuyo!</p>
+        </div>
+    </div>
+
+    
+    <div class="col-lg-12 text-center">
+        <!-- Formulario -->
+    <form id="formP">
+        <div class="form-group col-sm-5 pl-5 ml-5 text-left">
+          <label for="numberP">Busca aquí tu favorito</label>
+          <input type="text" class="form-control" id="numberP" placeholder="Ingresa un número de 1 a 807 o el nombre de tu pokemon">
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-5 pl-5 ml-5">
+            <img src="assets/img/pokemon2.png" alt="pokebola" class="logo-img2"> 
+              <button type="submit" class="btn btn-danger">Atrápalo</button>
+            </div>
+          </div>
+    </form>
+    <!-- Final del formulario -->
+    </div>
+
+     <!-- <div> Donde se inyectaran los datos luego de la consulta a la API -->
+
+    <div class="col-md-6 text-center results">
+        <div id="poke_container" class="poke-container">
+            <div class="col-md-6 pokeInfo"><img src="assets/img/pokemon.png" alt="pokejuego" class="logo-img2"> </div>
+        </div>
+            <div id="chartdiv"></div>
+            <div class="pStats"></div>  
+    </div>
+    
+    <footer class="text-center text-light p-3">
+      <p>Created by DianaArduinna 2020.</p>
+    </footer>
+    
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/kelly.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="assets/js/validacion.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
+</body>
+</html>

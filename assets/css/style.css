@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+
+body{
+    font-family: 'Fredoka One', cursive;
+    background-image: url('../img/pokemonBG2.jpg');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#logo-img{
+    max-height: 210px;
+  }
+
+.logo-img2{
+    max-height: 50px;
+}
+
+p{
+    font-family: 'Fredoka One', cursive;
+}
+.form-group{
+    font-family: 'Fredoka One', cursive;
+}
+
+
+
+.results{
+    background-image:linear-gradient(
+        115deg,
+        transparent 0%,
+        rgb(0, 231, 255) 30%,
+        rgb(255, 0, 231) 70%,
+        transparent 100%
+      );
+    mix-blend-mode: color-dodge;
+    margin: 40px 600px 70px 100px;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 4px 18px rgba(100, 100, 100, 0.5);
+    animation: holoCard 15s ease infinite;
+    
+}
+
+.pokeInfo{
+    background-image:linear-gradient(to bottom right, red, yellow);
+    border-radius: 40px;
+    padding: 7px;
+    margin: 5% 5% 5% 26%;
+    box-shadow: 0 4px 18px rgba(100, 100, 100, 0.5);
+    font-family: 'Fredoka One', cursive;  
+}
+
+#chartdiv {
+    background-image:radial-gradient( #74ebd5, #ACB6E5);
+    border-radius: 50px;
+    width: 90%;
+    height: 500px;
+    padding: 3px;
+    margin: 16px 50px 50px 35px;
+    box-shadow: 0 4px 18px rgba(100, 100, 100, 0.5);
+   
+  }
+
+.results > span {
+    position: relative;
+    top: 45%;
+  }
+
+.results:before,
+.results:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-image: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgb(0, 231, 255) 30%,
+    rgb(255, 0, 231) 70%,
+    transparent 100%
+  );
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  border-radius: 40px;
+  mix-blend-mode: color-dodge;
+  opacity: 0.2;
+  z-index: 1;
+  animation: holoGradient 15s ease infinite;
+}
+
+
+@keyframes holoGradient {
+    0%, 100% {
+      opacity: 0;
+      background-position: 0% 0%;
+    }
+    8% {
+      opacity: 0;
+    }
+    10% {
+      background-position: 0% 0%;
+    }
+    19% {
+      background-position: 100% 100%;
+      opacity: 0.5;
+    }
+    35% {
+      background-position: 100% 100%;
+    }
+    55% {
+      background-position: 0% 0%;
+      opacity: 0.3;
+    }
+    75% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes holoCard {
+    0%, 10% {
+      transform: rotate3d(0,0,0,-20deg);
+    }
+    20% {
+      transform: rotate3d(1,1,0.2,30deg);
+    }
+    100% {
+      transform: rotate3d(0,0,0,-20deg);
+    }
+  }
+
+footer{
+  background-image:linear-gradient(to right, #eeaeca, #94bbe9);
+  font-style: italic;
+}
