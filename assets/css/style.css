@@ -46,7 +46,7 @@ p{
 .pokeInfo{
     background-image:linear-gradient(to bottom right, red, yellow);
     border-radius: 40px;
-    margin: auto;
+    margin: 5% auto 5% auto;
     box-shadow: 0 4px 18px rgba(100, 100, 100, 0.5);
     font-family: 'Fredoka One', cursive;  
 }
@@ -57,7 +57,7 @@ p{
     width: 90%;
     height: 500px;
     padding: 3px;
-    margin: auto;
+    margin: 16px auto 50px auto;
     box-shadow: 0 4px 18px rgba(100, 100, 100, 0.5);
    
   }
