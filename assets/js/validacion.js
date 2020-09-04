@@ -3,16 +3,13 @@ $(document).ready(function(){
       event.preventDefault();
       var valueNumber = $("#numberP").val();
       var valueName = $("#numberP").val();
-      $(".pokeInfo").empty();
-      $(".pStats").empty();
-      //console.log(valueNumber);
+
       if(valueNumber !== null && valueNumber !== undefined || valueName !== null && valueName !== undefined) {
         $.ajax({
           url: `https://pokeapi.co/api/v2/pokemon/${valueNumber}/`,
           url: `https://pokeapi.co/api/v2/pokemon/${valueName}/`
         }).done(function( data ) {
-
-          $(".pokeInfo").append(`<div class="text-center"> <h3>${data.name}<h3> <div>`); //jquery
+          $(".pokeInfo").empty().append(`<div class="text-center"> <h3>${data.name}<h3> <div>`); //jquery
           $(".pokeInfo").append(`<img src="${data.sprites.front_default}" alt="${data.name}"> <img>`);
           $(".pokeInfo").append(`<div class="text-center"> <p>Peso: ${data.weight/10} [kg]<p> <div>`);
 

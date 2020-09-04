@@ -41,14 +41,12 @@ p{
     padding: 20px;
     box-shadow: 0 4px 18px rgba(100, 100, 100, 0.5);
     animation: holoCard 15s ease infinite;
-    
 }
 
 .pokeInfo{
     background-image:linear-gradient(to bottom right, red, yellow);
     border-radius: 40px;
-    padding: 7px;
-    margin: 5% 5% 5% 26%;
+    margin: auto;
     box-shadow: 0 4px 18px rgba(100, 100, 100, 0.5);
     font-family: 'Fredoka One', cursive;  
 }
@@ -59,7 +57,7 @@ p{
     width: 90%;
     height: 500px;
     padding: 3px;
-    margin: 16px 50px 50px 35px;
+    margin: auto;
     box-shadow: 0 4px 18px rgba(100, 100, 100, 0.5);
    
   }
