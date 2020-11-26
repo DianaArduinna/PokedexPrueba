@@ -1,3 +1,3 @@
 # PokedexPrueba
 
-Test for Desafio Latam, course 3 of FJD bootcamp 2020. 
+Test, course 3 of Full Stack Java Dev bootcamp 2020 at Edutecno. 
